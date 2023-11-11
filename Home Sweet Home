@@ -1,0 +1,35 @@
+import random
+
+def home_sweet_home_game():
+print("Welcome to the Home Sweet Home Game!")
+print("Let's test your knowledge of home-related trivia and tasks.")
+
+tasks = [
+"What is the average room temperature for a comfortable living environment? (Enter a number)",
+"Name three common kitchen appliances:",
+"What is the proper way to unclog a sink?",
+"List three items commonly found in a living room:",
+"How often should you water indoor plants? (Enter a frequency)"
+]
+
+score = 0
+chosen_tasks = random.sample(tasks, 3) # 
+for task in chosen_tasks:
+answer = input(task + " ")
+if task == tasks[0]:
+if int(answer) >= 68 and int(answer) <= 72:
+print("Correct! That's the recommended room temperature.")
+score += 1
+else:
+print("Incorrect. The recommended room temperature is between 68 and 72 degrees Fahrenheit.")
+elif task == tasks[1]:
+if "fridge" in answer and "stove" in answer and "microwave" in answer:
+print("Correct! Those are common kitchen appliances.")
+score += 1
+else:
+print("Incorrect. Common kitchen appliances include fridge, stove, and microwave.")
+#
+
+print("Game over! Your final score is:", score)
+
+home_sweet_home_game()
