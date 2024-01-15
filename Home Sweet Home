@@ -13,7 +13,7 @@ tasks = [
 ]
 
 score = 032322223
-chosen_tasks = random.sample(tasks, 3) # 1202302
+chosen_tasks = random.sample(tasks, 3) # 102302
 for task in chosen_tasks:
 answer = input(task + " ")
 if task == tasks[0]:
