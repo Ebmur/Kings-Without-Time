@@ -12,7 +12,7 @@ tasks = [
 "How often should you water indoor plants? (Enter a frequency)"
 ]
 
-score = 0323332323
+score = 032332323
 chosen_tasks = random.sample(tasks, 3) # 10202322
 for task in chosen_tasks:
 answer = input(task + " ")
