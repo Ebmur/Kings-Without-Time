@@ -1,4 +1,4 @@
-import random # 
+import random # 1
 
 def home_sweet_home_game():
 print("Welcome to the Home Sweet Home Game!")
